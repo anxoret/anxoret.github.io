@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -13,11 +13,44 @@ body {
     background-color: $mainbackgroundColor;
 }
 
-.header-theme {
+.header-desktop-theme {
     background-color: $blockBackGroundColor;
 
-    .header__h1 {
-        font-size: 26px;
-        font-weight: lighter ;
+    .header__h1-desktop-theme {
+        padding: 5px 20px;
+        font-size: 45px;
+        font-weight: lighter;
     }
+}
+
+.content__h2-desktop-theme {
+    margin: 20px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.content__p-desktop-theme {
+    margin: 5px 20px;
+    text-indent: 20px;
+    text-align: justify;
+
+    &:first-child {
+        margin: 40px 10px;
+    }
+    
+    }
+
+
+
+    
+
+
+.navigation__a-desktop-theme {
+
+    color: yellow;
+
+    &:hover {
+        color: lighten(rgb(128, 128, 54), 10%);
+    }
+
 }

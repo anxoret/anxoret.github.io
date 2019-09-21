@@ -2,14 +2,32 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px; }
+  font-size: 16px; }
 
 body {
   color: #eceff1;
   background-color: #263238; }
 
-.header-theme {
+.header-desktop-theme {
   background-color: #37474f; }
-  .header-theme .header__h1 {
-    font-size: 26px;
+  .header-desktop-theme .header__h1-desktop-theme {
+    padding: 5px 20px;
+    font-size: 45px;
     font-weight: lighter; }
+
+.content__h2-desktop-theme {
+  margin: 20px;
+  font-size: 35px;
+  font-weight: lighter; }
+
+.content__p-desktop-theme {
+  margin: 5px 20px;
+  text-indent: 20px;
+  text-align: justify; }
+  .content__p-desktop-theme:first-child {
+    margin: 40px 10px; }
+
+.navigation__a-desktop-theme {
+  color: yellow; }
+  .navigation__a-desktop-theme:hover {
+    color: #a4a445; }
