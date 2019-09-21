@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px; }
+
+body {
+  color: #eceff1;
+  background-color: #263238; }
+
+.header-theme {
+  background-color: #37474f; }
+  .header-theme .header__h1 {
+    font-size: 26px;
+    font-weight: lighter; }

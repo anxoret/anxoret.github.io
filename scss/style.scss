@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+body {
+    color: $textColor;
+    background-color: $mainbackgroundColor;
+}
+
+.header-theme {
+    background-color: $blockBackGroundColor;
+
+    .header__h1 {
+        font-size: 26px;
+        font-weight: lighter ;
+    }
+}
