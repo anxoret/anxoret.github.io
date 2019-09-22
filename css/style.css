@@ -8,26 +8,55 @@ body {
   color: #eceff1;
   background-color: #263238; }
 
-.header-desktop-theme {
-  background-color: #37474f; }
-  .header-desktop-theme .header__h1-desktop-theme {
+.header_blue-grey-theme {
+  background-color: #455a64;
+  border: 10px solid #37474f; }
+  .header_blue-grey-theme .header__h1_blue-grey-theme {
     padding: 5px 20px;
     font-size: 45px;
     font-weight: lighter; }
 
-.content__h2-desktop-theme {
-  margin: 20px;
-  font-size: 35px;
+.content__h2_blue-grey-theme {
+  margin: 20px 20px 15px;
+  font-size: 30px;
   font-weight: lighter; }
 
-.content__p-desktop-theme {
+.content__p_blue-grey-theme {
   margin: 5px 20px;
   text-indent: 20px;
   text-align: justify; }
-  .content__p-desktop-theme:first-child {
-    margin: 40px 10px; }
 
-.navigation__a-desktop-theme {
-  color: yellow; }
-  .navigation__a-desktop-theme:hover {
-    color: #a4a445; }
+.navigation__a_blue-grey-theme {
+  color: #eceff1;
+  text-decoration: none; }
+  .navigation__a_blue-grey-theme:hover {
+    color: #a3b1bb;
+    text-decoration: underline; }
+
+.content__a_blue-grey-theme {
+  color: #eceff1; }
+  .content__a_blue-grey-theme:hover {
+    color: #a3b1bb;
+    text-decoration: underline; }
+
+.navigation__item_blue-grey-theme {
+  display: inline-block;
+  margin: 5px 20px; }
+
+.navigation__a_blue-grey-theme {
+  font-size: 17px; }
+
+.content__works-container_blue-grey-theme {
+  margin: 20px;
+  width: 100%; }
+
+.content__image_blue-grey-theme {
+  width: 350px; }
+
+.content__image_blue-grey-theme {
+  text-align: center; }
+
+.content__work-container_blue-grey-theme {
+  float: left;
+  width: 400px;
+  height: 400px; }
