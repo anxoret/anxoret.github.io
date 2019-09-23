@@ -23,6 +23,13 @@ body {
   font-size: 30px;
   font-weight: lighter; }
 
+.content__span_blue-grey-theme {
+  font-size: 30px;
+  font-weight: lighter; }
+
+.content__span_hidden {
+  display: none; }
+
 .content__p_blue-grey-theme {
   margin: 5px 20px;
   text-indent: 20px;
@@ -69,9 +76,11 @@ body {
 
 .content__work-container_blue-grey-theme {
   position: relative;
+  margin: 5px;
   float: left;
   width: 300px;
-  height: 250px; }
+  height: 250px;
+  border: 10px solid #37474f; }
 
 .content__img-text_blue-grey-theme {
   margin: 10px;
