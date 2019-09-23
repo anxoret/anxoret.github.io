@@ -8,7 +8,7 @@ function writeH1LetterByLetter(permanentH1Class) {
 
     let i = 0;
 
-    let callIntervalFunction = setInterval(writeText, 90);
+    let callIntervalFunction = setInterval(writeText, 120);
 
     function writeText() {
         if (i < arrayOfLettersOfH1.length) {
