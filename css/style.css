@@ -5,7 +5,7 @@
   font-size: 16px; }
 
 body {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   color: #eceff1;
   background-color: #263238; }
@@ -47,6 +47,9 @@ body {
 
 .navigation__a_blue-grey-theme {
   font-size: 17px; }
+
+.content__information_blue-grey-theme {
+  overflow: hidden; }
 
 .text-information_blue-grey-theme {
   float: left; }
