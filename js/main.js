@@ -1,3 +1,4 @@
+// write a h1 at DOMContentLoaded event
 function writeH1LetterByLetter(permanentH1Class) {
     let requiredH1Text = "@anxoret.dev";
     let h1 = document.querySelector("." + permanentH1Class);
@@ -22,8 +23,11 @@ function writeH1LetterByLetter(permanentH1Class) {
 
 };
 
-document.addEventListener("DOMContentLoaded", writeH1LetterByLetter("header__h1_blue-grey-theme"));
+document.addEventListener("DOMContentLoaded", 
+    writeH1LetterByLetter("header__h1_blue-grey-theme")
+);
 
+// hide and show spans in h2
 function showOrHideClassOfElementsInDOM(permanentClassOfTheElements, hidingClassOfTheElements) {
     let elementsToShowOrHide = document.querySelectorAll("." + permanentClassOfTheElements);
 
@@ -41,3 +45,25 @@ function showOrHideClassOfElementsInDOM(permanentClassOfTheElements, hidingClass
 setInterval(() => {
     showOrHideClassOfElementsInDOM("content__span_blue-grey-theme", "content__span_hidden");
 }, 1000);
+
+// open and close a small navigation menu
+function openOrHideSmallNavigationMenu() {
+    let smallNavigationMenu = document.querySelector(".small-navigation__menu_blue-grey-theme");
+    let h1 = document.querySelector(".header__h1_blue-grey-theme");
+    let spans = document.querySelectorAll(".small-navigation__span_blue-grey-theme");
+    let spanToHide = spans[1]; // hide second span from DOM (in small navigation button)
+
+    if (smallNavigationMenu.style.display == "none") {
+        smallNavigationMenu.style.display = "block";
+        h1.style.display = "none";
+        spanToHide.classList.add("small-navigation__span_hidden");
+        spans[0].classList.add("small-navigation__span_rotate-right");
+        spans[2].classList.add("small-navigation__span_rotate-left");
+    } else {
+        smallNavigationMenu.style.display = "none";
+        h1.style.display = "inline-block";
+        spanToHide.classList.remove("small-navigation__span_hidden");
+        spans[0].classList.remove("small-navigation__span_rotate-right");
+        spans[2].classList.remove("small-navigation__span_rotate-left");
+    }
+};
