@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "build": "babel js/es6/main.js -o js/es5/main.js"
+    },
+    "babel": {
+        "presets": ["es2015"],
+        "plugins": []
+    }
+}
