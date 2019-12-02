@@ -1,19 +1,26 @@
-let modalContent = document.querySelectorAll(".modal-content")[0];
-let image = document.querySelectorAll(".content__img")[1];
-let modalContentImg = document.querySelectorAll(".modal-content__img")[0];
-let modalContentCaption = document.querySelectorAll(".modal-content__caption")[0];
+let contentWorkContainers = document.querySelectorAll(".content__work-container");
 
-console.log(image);
+contentWorkContainers.forEach( (container, i) => {
+    // skip last container, because it has information only about Github profile
+    if (i == contentWorkContainers.length - 1) return;
 
-image.onclick = function () {
-    modalContent.style.display = "block";
-    modalContentImg.src = this.src;
-    modalContentCaption.innerHTML = this.alt;
-    // console.log("jj");
-}
+    let image = container.querySelector(".content__img");
+    let modalContent = container.querySelector(".modal-content");
+    let modalContentImg = modalContent.querySelector(".modal-content__img");
+    let modalContentCaption = modalContent.querySelector(".modal-content__caption");
+    let contentImageText = container.querySelector(".content__image-text");
 
-let modalContentCloseSpan = document.querySelectorAll(".modal-content__close-span")[0];
-modalContentCloseSpan.onclick = function () {
-    modalContent.style.display = "none";
-}
+    image.onclick = function () {
+        modalContent.style.display = "block";
+        modalContentImg.src = this.src;
+        modalContentCaption.innerHTML = contentImageText.innerHTML;
+    };
+
+    let modalContentCloseSpan = modalContent.querySelector(".modal-content__close-span");
+    modalContentCloseSpan.onclick = () => {
+        modalContent.style.display = "none";
+    };
+
+});
+
 
