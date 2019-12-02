@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "build": "babel js/es6/main.js -o js/es5/main.js"
+        "build-main": "babel js/es6/main.js -o js/es5/main.js",
+        "build-modal-content": "babel js/es6/modal-content.js -o js/es5/modal-content.js"
     },
     "babel": {
         "presets": ["es2015"],

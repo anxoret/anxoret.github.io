@@ -3,7 +3,20 @@
 
     &:hover {
         opacity: 0.7;
+
+        
     }
+
+    img:first-child {
+        border: 2px solid yellow;
+        opacity: 0;
+    }
+
+}
+
+.content__img_blue-grey-theme :first-child {
+    border: 2px solid yellow;
+    opacity: 0;
 }
 
 .modal-content_blue-grey-theme {
