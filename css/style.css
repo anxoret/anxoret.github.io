@@ -167,7 +167,8 @@ body {
 .content__img_blue-grey-theme {
   display: block;
   margin: 0 auto;
-  width: 280px; }
+  width: 280px;
+  cursor: pointer; }
 
 .content__img_float-right {
   float: right;
