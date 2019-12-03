@@ -1,3 +1,8 @@
+"use strict";
+
+import {createModalImageDiv} from "./js/es6/modal-content.js";
+import {hangEventsOnModalImageDiv} from "./js/es6/modal-content.js";
+
 // write a h1 at DOMContentLoaded event
 function writeH1LetterByLetter(permanentH1Class) {
     let requiredH1Text = "@anxoret.dev";
@@ -67,3 +72,10 @@ function openOrHideSmallNavigationMenu() {
         spans[2].classList.remove("small-navigation__span_rotate-left");
     }
 };
+
+let contentWorkContainers = document.querySelectorAll(".content__work-container");
+contentWorkContainers.forEach( (container) => {
+    hangEventsOnModalImageDiv(
+        createModalImageDiv(container)
+    );
+});
