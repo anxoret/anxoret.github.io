@@ -1,22 +1,10 @@
-.content__img_blue-grey-theme {
-    transition: 0.3s;
+.content__work-container_blue-grey-theme .content__img_blue-grey-theme {
+   transition: 0.3s;
+   cursor: pointer;
 
     &:hover {
-        opacity: 0.7;
-
-        
+        opacity: 0.7; 
     }
-
-    img:first-child {
-        border: 2px solid yellow;
-        opacity: 0;
-    }
-
-}
-
-.content__img_blue-grey-theme :first-child {
-    border: 2px solid yellow;
-    opacity: 0;
 }
 
 .modal-content_blue-grey-theme {
@@ -59,10 +47,10 @@
     animation-duration: 0.6s;
 }
 
-@-webkit-keyframes zoom {
-    from {-webkit-transform: scale(0);}
-    to {-webkit-transform: scale(1)}
-}
+// @-webkit-keyframes zoom {
+//     from {-webkit-transform: scale(0);}
+//     to {-webkit-transform: scale(1)}
+// }
 
 @keyframes zoom {
     from {transform: scale(0);}
