@@ -1,7 +1,7 @@
 "use strict";
 
-import {createModalImageDiv} from "./js/es6/modal-content.js";
-import {hangEventsOnModalImageDiv} from "./js/es6/modal-content.js";
+import {createModalImageDiv} from "./modal-content.js";
+import {hangEventsOnModalImageDiv} from "./modal-content.js";
 
 // write a h1 at DOMContentLoaded event
 function writeH1LetterByLetter(permanentH1Class) {
@@ -73,9 +73,14 @@ function openOrHideSmallNavigationMenu() {
     }
 };
 
+// create modal images of works
 let contentWorkContainers = document.querySelectorAll(".content__work-container");
-contentWorkContainers.forEach( (container) => {
-    hangEventsOnModalImageDiv(
-        createModalImageDiv(container)
-    );
+let numberOfcontentWorks = contentWorkContainers.length;
+
+contentWorkContainers.forEach( (container, i) => {
+    // skip the last container, because it has no image
+    if (i == numberOfcontentWorks - 1) return;
+
+    createModalImageDiv(container);
+    hangEventsOnModalImageDiv(container);
 });

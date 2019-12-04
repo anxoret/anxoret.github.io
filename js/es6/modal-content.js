@@ -16,7 +16,7 @@ export const createModalImageDiv = (container) => {
 };
 
 export const hangEventsOnModalImageDiv = (contentWorkContainer) => {
-    let image = contentWorkContainer.querySelector(".content__work-container .content__img");
+    let image = contentWorkContainer.querySelector(".content__img");
     let modalContent = contentWorkContainer.querySelector(".modal-content");
     let modalContentImg = modalContent.querySelector(".modal-content__img");
     let modalContentCaption = modalContent.querySelector(".modal-content__caption");
