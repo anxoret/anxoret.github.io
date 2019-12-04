@@ -1,5 +1,7 @@
 "use strict";
 
+var _modalContent = require("./modal-content.js");
+
 // write a h1 at DOMContentLoaded event
 function writeH1LetterByLetter(permanentH1Class) {
     var requiredH1Text = "@anxoret.dev";
@@ -64,3 +66,15 @@ function openOrHideSmallNavigationMenu() {
         spans[2].classList.remove("small-navigation__span_rotate-left");
     }
 };
+
+// create modal images of works
+var contentWorkContainers = document.querySelectorAll(".content__work-container");
+var numberOfcontentWorks = contentWorkContainers.length;
+
+contentWorkContainers.forEach(function (container, i) {
+    // skip the last container, because it has no image
+    if (i == numberOfcontentWorks - 1) return;
+
+    (0, _modalContent.createModalImageDiv)(container);
+    (0, _modalContent.hangEventsOnModalImageDiv)(container);
+});

@@ -1,7 +1,5 @@
 "use strict";
 
-// let contentWorkContainers = document.querySelectorAll(".content__work-container");
-
 export const createModalImageDiv = (container) => {
     let div = document.createElement("div");
     div.classList = "modal-content modal-content_blue-grey-theme";
