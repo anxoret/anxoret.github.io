@@ -84,3 +84,7 @@ contentWorkContainers.forEach( (container, i) => {
     createModalImageDiv(container);
     hangEventsOnModalImageDiv(container);
 });
+
+if (NODE_ENV == "development") {
+    console.log("Включен development!!");
+}
