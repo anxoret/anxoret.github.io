@@ -19,6 +19,7 @@ export const hangEventsOnModalImageDiv = (contentWorkContainer) => {
     let modalContentImg = modalContent.querySelector(".modal-content__img");
     let modalContentCaption = modalContent.querySelector(".modal-content__caption");
     let contentImageText = contentWorkContainer.querySelector(".content__image-text");
+    debugger;
 
     image.onclick = function() {
         modalContent.style.display = "block";
