@@ -85,6 +85,6 @@ contentWorkContainers.forEach( (container, i) => {
     hangEventsOnModalImageDiv(container);
 });
 
-if (NODE_ENV == "development") {
-    console.log("Включен development!!");
-}
+// if (NODE_ENV == "development") {
+//     console.log("Включен development!!");
+// }
