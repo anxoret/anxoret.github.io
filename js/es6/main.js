@@ -75,11 +75,11 @@ function openOrHideSmallNavigationMenu() {
 
 // create modal images of works
 let contentWorkContainers = document.querySelectorAll(".content__work-container");
-let numberOfcontentWorks = contentWorkContainers.length;
+let numberOfContentWorks = contentWorkContainers.length;
 
 contentWorkContainers.forEach( (container, i) => {
     // skip the last container, because it has no image
-    if (i == numberOfcontentWorks - 1) return;
+    if (i == numberOfContentWorks - 1) return;
 
     createModalImageDiv(container);
     hangEventsOnModalImageDiv(container);
